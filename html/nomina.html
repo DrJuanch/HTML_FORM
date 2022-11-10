@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Payroll</title>
+</head>
+<body>
+    <header>
+        <h1>NÓMINA</h1>
+    </header>
+    <section class="main-container">
+        <fieldset class="form-container">
+            <legend>INFORMACIÓN TRABAJADOR</legend>
+            <form action="">
+                <label for="firstname">Nombre completo*:</label><br>
+                <input type="text" nombre="Name" id="firstname" required autofocus pattern="[A-Za-z ]{2,40}" placeholder="Ingrese nombre completo"><br>
+                <label for="lastname">Apellido*:</label><br>
+                <input type="text" nombre="lastname" id="lastname" required pattern="[A-Za-zÑ-ñ ]{2,40}" placeholder="Ingrese sus apellidos"><br>
+                <label for="workingdays">Días Trabajados*:</label><br>
+                <input type="text" nombre="workingdays" id="workingdays" required pattern="[0-9]{3}" placeholder="Ingrese días trabajados"><br><!--Se usa el tipo texto para poder usar la limitación de caracteres, sabiendo que en la parte del back podré cambiar el tipo texto por el que se requiera.-->
+                <label for="salary">Ingrese su salario*:</label><br>
+                <input type="text" nombre="salary" id="salary" required pattern="[0-9]{4,30}" placeholder="Ingrese su salario"><br> <!--Se usa el tipo texto para poder usar la limitación de caracteres, sabiendo que en la parte del back podré cambiar el tipo texto por el que se requiera.-->
+                <label for="identification">identificación*:</label>
+                <input type="text" nombre="identification" id="identification" required pattern="[0-9A-Z]{2,30}" placeholder="Ingrese su identificación">
+                <button class="button-submit" type="submit">Enviar</button>
+                <button class="button-reset" type="reset">Borrar</button>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>

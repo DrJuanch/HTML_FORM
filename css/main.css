@@ -1,0 +1,53 @@
+header h1{
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 160px;
+    background-color: aqua;
+    color: black;
+    border: solid black;
+}
+.form-container legend{
+    font-size: 11px;
+    text-align: center;
+    color: darkred;
+}
+.form-container form input{
+    border: 2px solid black;
+}
+.button-submit{
+    float: right;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    color: black;
+    border: 2px solid black;
+}
+.button-reset{
+    margin-top: 10px;
+    background-color: dodgerblue;
+    color: black;
+    border: 2px solid black;
+}
+.button-reset:hover{
+    background-color: crimson;
+}
+.button-submit:hover{
+    background-color: blue;
+}
+.form-container .index-legend{
+    font-size: 15px;
+    text-align: center;
+}
+.forgotten-password{
+    color: red;
+}

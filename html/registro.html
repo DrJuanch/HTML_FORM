@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO</h1>
+    </header>
+    <section class="main-container">
+        <fieldset class="form-container">
+            <legend>INFORMACIÓN TRABAJADOR</legend>
+            <form action="" method="get">
+                <label for="firstname">Nombre completo*:</label><br>
+                <input type="text" nombre="Name" id="firstname" required autofocus pattern="[A-Za-z ]{2,40}" placeholder="Ingrese nombre completo"><br>
+                <label for="lastname">Apellido*:</label><br>
+                <input type="text" nombre="lastname" id="lastname" required pattern="[A-Za-zÑ-ñ ]{2,40}" placeholder="Ingrese sus apellidos"><br>
+                <label for="password">Contraseña:</label><br>
+                <input type="password" placeholder="********" tittle="Este espacio no puede estar vacio" name="password" id="password" required pattern="{8,}" tittle="Debe contener al menos 8 caracteres"><br>
+                <label for="confirmedpassword">Confirmar Contraseña</label><br>
+                <input type="password" name="Confirmed-password" id="confirmedpassword" placeholder="********" required>
+                <label for="adress">Dirección:</label><br>
+                <input type="text" name="adress" id="adress" placeholder="Ingrese su dirección" required pattern="[a-z\0-9 ]+# [0-9\a-z ]+-[ 0-9\a-z ]{2,}" title="La dirección debe tener la siguiente forma: calle 70a #1-2"><br>
+                <label for="birth-date">Fecha de nacimiento:</label><br>
+                <input type="date" name="Birth-date" id="birth-date" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" placeholder="ejemplo@ejemplo.dominio" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}"><br>
+                <label for="phone-number">Telefono</label><br>
+                <input type="text" name="number" id="phone-number" pattern="[0-9]{7,10}"><br>
+                <input class="button-submit" type="submit" onclick="check()" value="Enviar"></input>
+            </form>
+        </fieldset>
+    </section>
+    <script>
+        function check(){
+            var password = document.getElementById("password").value;
+            var cnfpassword = document.getElementById("confirmedpassword").value;
+            if (password.length != 0){
+                if (password == cnfpassword){
+                    alert("Todo salió bien")
+                }
+                else{
+                    alert("Las contraseñas no coinciden")
+                }
+            }
+            else{
+                alert("Ingrese una contraseña")
+            }
+        }
+    </script>
+</body>
+</html>
