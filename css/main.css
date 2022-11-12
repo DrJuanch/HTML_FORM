@@ -1,3 +1,8 @@
+body{
+    background-image: url(/img/fondo-form.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header h1{
     color: darkblue;
     font-size: 30px;
@@ -12,7 +17,8 @@ header h1{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 160px;
+    width: 50%;
+    height: 400px;
     background-color: aqua;
     color: black;
     border: solid black;
@@ -22,8 +28,101 @@ header h1{
     text-align: center;
     color: darkred;
 }
-.form-container form input{
-    border: 2px solid black;
+.form-cnt{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.first-name{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 5px 20px 10px 0;
+}
+#firstname{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 5px 20px 10px 0;
+    height: 20px;
+}
+.last-name{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 5px 20px 0 10px;
+}
+#lastname{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 5px 20px 0 10px;
+    height: 20px;
+}
+.password-lbl{
+    grid-column: 1;
+    grid-row: 3;
+    margin: 5px 20px 10px 0;
+}
+#password{
+    grid-column: 1;
+    grid-row: 4;
+    margin: 5px 20px 10px 0;
+    height: 20px;
+}
+.conf-password{
+    grid-column: 2;
+    grid-row: 3;
+    margin: 5px 20px 0 10px;
+}
+#confirmedpassword{
+    grid-column: 2;
+    grid-row: 4;
+    margin: 5px 20px 0 10px;
+    height: 20px;
+}
+.adress-lbl{
+    grid-column: 1;
+    grid-row: 5;
+    margin: 5px 20px 10px 0;
+}
+#adress{
+    grid-column: 1;
+    grid-row: 6;
+    margin: 5px 20px 10px 0;
+    height: 20px;
+}
+.date-lbl{
+    grid-column: 2;
+    grid-row: 5;
+    margin: 5px 20px 0 10px;
+}
+#birth-date{
+    grid-column: 2;
+    grid-row: 6;
+    margin: 5px 20px 0 10px;
+    height: 20px;
+}
+.email-lbl{
+    grid-column: 1;
+    grid-row: 7;
+    margin: 5px 20px 10px 0;
+}
+#email{
+    grid-column: 1;
+    grid-row: 8;
+    margin: 5px 20px 10px 0;
+    height: 20px;
+}
+.phone-lbl{
+    grid-column: 2;
+    grid-row: 7;
+    margin: 5px 20px 0 10px;
+}
+#phone-number{
+    grid-column: 2;
+    grid-row: 8;
+    margin: 5px 20px 0 10px;
+    height: 20px;
 }
 .button-submit{
     float: right;
@@ -31,6 +130,13 @@ header h1{
     background-color: dodgerblue;
     color: black;
     border: 2px solid black;
+}
+#submit{
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    grid-column: 1/3;
+    grid-row: 9;
 }
 .button-reset{
     margin-top: 10px;
@@ -53,4 +159,10 @@ header h1{
 }
 #confirmedpassword{
     user-select: none;
+}
+@media screen and (max-width: 680px) {
+    body{
+        background-color: black;
+        font-size: 14px;
+    }
 }
