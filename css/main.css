@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url(/img/fondo-form.jpeg);
     background-repeat: no-repeat;
@@ -15,10 +18,11 @@ header h1{
 }
 .form-container{
     display: flex;
+    align-items: center;
     justify-content: center;
     align-content: center;
     width: 50%;
-    height: 400px;
+    height: 650px;
     background-color: aqua;
     color: black;
     border: solid black;
@@ -29,99 +33,105 @@ header h1{
     color: darkred;
 }
 .form-cnt{
-    width: 80%;
+    width: 100%;
     display: grid;
+    margin-top: 4rem;
+    margin-left: 3rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 1fr);
     justify-content: center;
     align-items: center;
 }
+.form-cnt label, input{
+    width: 80%;
+    height: 20px;
+}
 .first-name{
     grid-column: 1;
     grid-row: 1;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
 }
 #firstname{
     grid-column: 1;
     grid-row: 2;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
     height: 20px;
 }
 .last-name{
     grid-column: 2;
     grid-row: 1;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
 }
 #lastname{
     grid-column: 2;
     grid-row: 2;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
     height: 20px;
 }
 .password-lbl{
     grid-column: 1;
     grid-row: 3;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
 }
 #password{
     grid-column: 1;
     grid-row: 4;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
     height: 20px;
 }
 .conf-password{
     grid-column: 2;
     grid-row: 3;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
 }
 #confirmedpassword{
     grid-column: 2;
     grid-row: 4;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
     height: 20px;
 }
 .adress-lbl{
     grid-column: 1;
     grid-row: 5;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
 }
 #adress{
     grid-column: 1;
     grid-row: 6;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
     height: 20px;
 }
 .date-lbl{
     grid-column: 2;
     grid-row: 5;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
 }
 #birth-date{
     grid-column: 2;
     grid-row: 6;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
     height: 20px;
 }
 .email-lbl{
     grid-column: 1;
     grid-row: 7;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
 }
 #email{
     grid-column: 1;
     grid-row: 8;
-    margin: 5px 20px 10px 0;
+    margin: 10px 0;
     height: 20px;
 }
 .phone-lbl{
     grid-column: 2;
     grid-row: 7;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
 }
 #phone-number{
     grid-column: 2;
     grid-row: 8;
-    margin: 5px 20px 0 10px;
+    margin: 10px 0;
     height: 20px;
 }
 .button-submit{
@@ -160,9 +170,8 @@ header h1{
 #confirmedpassword{
     user-select: none;
 }
+.form-cnt {
+
+}
 @media screen and (max-width: 680px) {
-    body{
-        background-color: black;
-        font-size: 14px;
-    }
 }
