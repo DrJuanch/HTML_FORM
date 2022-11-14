@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bree Serif', serif;
+    background-image: url(/img/5586989.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    height: 200px;
+    background-color: #93b2a4;
+    color: black;
+    border: 3px solid #fd8a6b;
+}
+.form-cnt{
+    width: 100%;
+    text-align: center;
+}
+input,label{
+    margin: 10px 0;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.forgotten-password{
+    font-size: 13px;
+}
+.button-submit{
+    background-color: coral;
+    font-family: 'Bree Serif', serif;
+}
+.button-submit:hover{
+    background-color: darkorange;
+}
+.buttons{
+    display: flex;
+    margin-top: 10px;
+}

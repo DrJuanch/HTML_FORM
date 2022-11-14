@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 *{
     box-sizing: border-box;
 }
 body{
-    background-image: url(/img/fondo-form.jpeg);
+    font-family: 'Bree Serif', serif;
+    background-image: url(/img/5586989.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,9 +25,9 @@ header h1{
     align-content: center;
     width: 50%;
     height: 650px;
-    background-color: aqua;
+    background-color: #93b2a4;
     color: black;
-    border: solid black;
+    border: 3px solid #fd8a6b;
 }
 .form-container legend{
     font-size: 11px;
@@ -150,7 +152,7 @@ header h1{
 }
 .button-reset{
     margin-top: 10px;
-    background-color: dodgerblue;
+    background-color: #fd8a6b;
     color: black;
     border: 2px solid black;
 }
@@ -158,7 +160,7 @@ header h1{
     background-color: crimson;
 }
 .button-submit:hover{
-    background-color: blue;
+    background-color: darkorange;
 }
 .form-container .index-legend{
     font-size: 15px;
@@ -169,9 +171,6 @@ header h1{
 }
 #confirmedpassword{
     user-select: none;
-}
-.form-cnt {
-
 }
 @media screen and (max-width: 680px) {
 }

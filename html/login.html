@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
 <body>
+    <header>
+        <h1>LOGIN</h1>
+    </header>
     <section class="main-container">
         <fieldset class="form-container"> 
         <legend class="index-legend">INGRESO</legend>
-            <form action="nomina.html" method="get">
+            <form class="form-cnt" action="nomina.html" method="get">
                 <label for="firstname">Usuario:</label><br>
                 <input type="text" nombre="Name" id="firstname" required autofocus pattern="[ADMIN-admin]{2,}" title="Usuario incorrecto" placeholder="Ingrese su usuario"><br>
                 <label for="lastname">Contraseña:</label><br>
                 <input type="password" nombre="password" id="password" required pattern="[12345]{2,}" title="Contraseña incorrecta" placeholder="Ingrese su contraseña"><br>
-                <button class="button-submit" type="submit">Enviar</button>
-                <a class="forgotten-password" href="">Olvido su contraseña</a>
+                <div class="buttons">
+                    <div class="link-forgotten">
+                        <a class="forgotten-password" href="">Olvido su contraseña</a>
+                    </div>
+                    <div class="button-submit-container">
+                        <button class="button-submit" type="submit">Enviar</button>
+                    </div>
+                </div>
             </form>
         </fieldset>
     </section>
